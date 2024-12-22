@@ -10,11 +10,11 @@ connectDB()
 
 const bootstrap = (app, express) => {
     app.use(express.json())
-    app.use(cors({
-        origin: 'http://verse-api-six.vercel.app',
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        credentials: true
-    }));
+    // app.use(cors({
+    //     origin: 'http://verse-api-six.vercel.app',
+    //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    //     credentials: true
+    // }));
 
     app.get('/', (req, res, next) => {
         res.send('Hello World!');
